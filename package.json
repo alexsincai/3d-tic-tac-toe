@@ -1,0 +1,30 @@
+{
+  "name": "3d-tic-tac-toe",
+  "version": "2.0.0",
+  "description": "3d-tic-tac-toe",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c && purgecss -c purgecss.config.js -o public/build/",
+    "dev": "rollup -c -w",
+    "start": "sirv public"
+  },
+  "author": "Alex Sincai",
+  "license": "MIT",
+  "dependencies": {
+    "sirv-cli": "^0.4.5"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "css-reset-and-normalize": "^2.1.0",
+    "node-sass": "^4.13.1",
+    "purgecss": "^2.0.6",
+    "rollup": "^1.31.0",
+    "rollup-plugin-livereload": "^1.0.4",
+    "rollup-plugin-postcss": "^2.0.6",
+    "rollup-plugin-svelte": "^5.1.1",
+    "rollup-plugin-terser": "^5.2.0",
+    "svelte": "^3.18.2",
+    "svelte-preprocess": "^3.4.0"
+  }
+}
