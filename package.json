@@ -6,9 +6,11 @@
   "scripts": {
     "build": "rollup -c && purgecss -c purgecss.config.js -o public/build/",
     "dev": "rollup -c -w",
-    "start": "sirv public"
+    "start": "sirv public",
+    "deploy": "npm run build && gh-pages -d public"
   },
   "author": "Alex Sincai",
+  "homepage": "http://alexsincai.github.io/3d-tic-tac-toe",
   "license": "MIT",
   "dependencies": {
     "sirv-cli": "^0.4.5"
@@ -17,6 +19,7 @@
     "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-node-resolve": "^7.1.1",
     "css-reset-and-normalize": "^2.1.0",
+    "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1",
     "purgecss": "^2.0.6",
     "rollup": "^1.31.0",
